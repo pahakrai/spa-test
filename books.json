@@ -1,0 +1,468 @@
+{
+    "title": "GWT in Action",
+    "price": 632,
+    "authors": ["Robert Hanson", "Adam Tacy"],
+    "categories": ["Internet", "Java"]
+  }
+  {
+    "title": "The Quick Python Book",
+    "price": 444,
+    "authors": ["Daryl Harms", "Kenneth McDonald"],
+    "categories": ["Python"]
+  }
+  {
+    "title": "SharePoint 2010 Site Owner's Manual",
+    "price": 300,
+    "authors": ["Yvonne M. Harryman"],
+    "categories": ["Microsoft .NET"]
+  }
+  {
+    "title": "Hello World!",
+    "price": 432,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/sande.jpg",
+    "authors": ["Warren D. Sande", "Carter Sande"],
+    "categories": ["Programming", "Python"]
+  }
+  {
+    "title": "SCBCD Exam Study Kit",
+    "price": 488,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/sanghera.jpg",
+    "authors": ["Paul Sanghera"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "Bitter EJB",
+    "price": 440,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/tate2.jpg",
+    "authors": ["Bruce Tate", "Mike Clark", "Bob Lee", "Patrick Linskey"],
+    "categories": ["Java", "Internet"]
+  }
+  {
+    "title": "Spring Batch in Action",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/templier.jpg",
+    "authors": [
+      "Arnaud Cogoluegnes",
+      "Thierry Templier",
+      "Gary Gregory",
+      "Olivier Bazoud"
+    ],
+    "categories": ["In Action"]
+  }
+  {
+    "title": "JDK 1.4 Tutorial",
+    "price": 408,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/travis.jpg",
+    "authors": ["Gregory M. Travis"],
+    "categories": ["Java", "Internet"]
+  }
+  {
+    "title": "SharePoint 2010 Web Parts in Action",
+    "price": 448,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/wilen.jpg",
+    "authors": ["Wictor Wilén"],
+    "categories": ["Microsoft .NET"]
+  }
+  {
+    "title": "C++ Concurrency in Action",
+    "price": 325,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/williams.jpg",
+    "authors": ["Anthony Williams"],
+    "categories": ["Microsoft .NET"]
+  }
+  {
+    "title": "Java Servlets by Example",
+    "price": 550,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/williamson.jpg",
+    "authors": ["Alan R. Williamson"],
+    "categories": ["Java", "Internet"]
+  }
+  {
+    "title": "XML Programming with VB and ASP",
+    "price": 320,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/wilson.jpg",
+    "authors": ["Mark Wilson", "Tracey Wilson"],
+    "categories": ["XML", "Internet"]
+  }
+  {
+    "title": "Oracle8i Database Administration",
+    "price": 543,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/yuhanna.jpg",
+    "authors": ["Noel Yuhanna"],
+    "categories": ["Client-Server", "Networking"]
+  }
+  {
+    "title": "The Engaging Web",
+    "price": 325,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/zichermann.jpg",
+    "authors": ["Gabe Zichermann", "Chris Cunningham"],
+    "categories": ["Web Development"]
+  }
+  {
+    "title": "Enterprise OSGi In Action",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cummins.jpg",
+    "authors": ["Holly Cummins", "Timothy Ward"],
+    "categories": []
+  }
+  {
+    "title": "Ext JS in Action, Second Edition",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/garcia3.jpg",
+    "authors": ["Jesus Garcia", "Grgur Grisogono", "", "Jacob K. Andresen"],
+    "categories": []
+  }
+  {
+    "title": "Android in Action, Third Edition",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson3.jpg",
+    "authors": ["W. Frank Ableson", "Robi Sen", "Chris King", "C. Enrique Ortiz"],
+    "categories": []
+  }
+  {
+    "title": "Arduino in Action",
+    "price": 300,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mevans.jpg",
+    "authors": ["Martin Evans", "Joshua Noble", "", "Jordan Hochenbaum"],
+    "categories": []
+  }
+  {
+    "title": "Android in Action, Second Edition",
+    "price": 592,
+    "authors": ["W. Frank Ableson", "Robi Sen"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "Specification by Example",
+    "price": 0,
+    "authors": ["Gojko Adzic"],
+    "categories": ["Software Engineering"]
+  }
+  {
+    "title": "Flex 3 in Action",
+    "price": 576,
+    "authors": ["Tariq Ahmed with Jon Hirschi", "Faisal Abid"],
+    "categories": ["Internet"]
+  }
+  {
+    "title": "Flex 4 in Action",
+    "price": 600,
+    "authors": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"],
+    "categories": ["Internet"]
+  }
+  {
+    "title": "Collective Intelligence in Action",
+    "price": 425,
+    "authors": ["Satnam Alag"],
+    "categories": ["Internet"]
+  }
+  {
+    "title": "Zend Framework in Action",
+    "price": 432,
+    "authors": ["Rob Allen", "Nick Lo", "Steven Brown"],
+    "categories": ["Web Development"]
+  }
+  {
+    "title": "Flex on Java",
+    "price": 265,
+    "authors": ["Bernerd Allmon", "Jeremy Anderson"],
+    "categories": ["Internet"]
+  }
+  {
+    "title": "Griffon in Action",
+    "price": 375,
+    "authors": ["Andres Almiray", "Danno Ferrin", "", "James Shingler"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "OSGi in Depth",
+    "price": 325,
+    "authors": ["Alexandre de Castro Alves"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "Flexible Rails",
+    "price": 592,
+    "authors": ["Peter Armstrong"],
+    "categories": ["Web Development"]
+  }
+  {
+    "title": "Hello! Flex 4",
+    "price": 258,
+    "authors": ["Peter Armstrong"],
+    "categories": ["Internet"]
+  }
+  {
+    "title": "Coffeehouse",
+    "price": 316,
+    "authors": ["Levi Asher", "Christian Crumlish"],
+    "categories": ["Miscellaneous"]
+  }
+  {
+    "title": "Team Foundation Server 2008 in Action",
+    "price": 344,
+    "authors": ["Jamil Azher"],
+    "categories": ["Microsoft .NET"]
+  }
+  {
+    "title": "Brownfield Application Development in .NET",
+    "price": 550,
+    "authors": ["Kyle Baley", "Donald Belcham"],
+    "categories": ["Microsoft"]
+  }
+  {
+    "title": "MongoDB in Action",
+    "price": 0,
+    "authors": ["Kyle Banker"],
+    "categories": ["Next Generation Databases"]
+  }
+  {
+    "title": "Distributed Application Development with PowerBuilder 6.0",
+    "price": 504,
+    "authors": ["Michael J. Barlotta"],
+    "categories": ["PowerBuilder"]
+  }
+  {
+    "title": "Jaguar Development with PowerBuilder 7",
+    "price": 550,
+    "authors": ["Michael Barlotta"],
+    "categories": ["PowerBuilder", "Client-Server"]
+  }
+  {
+    "title": "Taming Jaguar",
+    "price": 362,
+    "authors": ["Michael J. Barlotta", "Jason R. Weiss"],
+    "categories": ["PowerBuilder"]
+  }
+  {
+    "title": "3D User Interfaces with Java 3D",
+    "price": 520,
+    "authors": ["Jon Barrilleaux"],
+    "categories": ["Java", "Computer Graphics"]
+  }
+  {
+    "title": "Hibernate in Action",
+    "price": 400,
+    "authors": ["Christian Bauer", "Gavin King"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "Hibernate in Action (Chinese Edition)",
+    "price": 400,
+    "authors": ["Christian Bauer", "Gavin King"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "Java Persistence with Hibernate",
+    "price": 880,
+    "authors": ["Christian Bauer", "Gavin King"],
+    "categories": ["Java"]
+  }
+  {
+    "title": "Node.js in Action",
+    "price": 300,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cantelon.jpg",
+    "authors": [
+      "Mike Cantelon",
+      "Marc Harter",
+      "T.J. Holowaychuk",
+      "",
+      "Nathan Rajlich"
+    ],
+    "categories": ["Web Development"]
+  }
+  {
+    "title": "Third-Party JavaScript ",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/vinegar.jpg",
+    "authors": ["Ben Vinegar", "Anton Kovalyov"],
+    "categories": []
+  }
+  {
+    "title": "Multimedia Computing",
+    "price": 0,
+    "authors": ["Matthew E. Hodges"],
+    "categories": []
+  }
+  {
+    "title": "Web Development with JavaServer Pages",
+    "price": 0,
+    "authors": ["Duane K. Fields", "Mark A. Kolb"],
+    "categories": []
+  }
+  {
+    "title": "Up to Speed with Swing",
+    "price": 0,
+    "authors": ["Steven J. Gutz"],
+    "categories": []
+  }
+  {
+    "title": "Manager's Guide to Open Source",
+    "price": 0,
+    "authors": ["Maria Winslow"],
+    "categories": []
+  }
+  {
+    "title": "Programming Web Services with Java",
+    "price": 0,
+    "authors": ["Ajamu A. Wesley"],
+    "categories": []
+  }
+  {
+    "title": "TCP/IP Programming for OS/2",
+    "price": 0,
+    "authors": ["Steven J. Gutz"],
+    "categories": []
+  }
+  {
+    "title": "SCWCD Exam Study Kit",
+    "price": 0,
+    "authors": ["Hanumant Deshmukh", "Jignesh Malavia"],
+    "categories": []
+  }
+  {
+    "title": "Unit Testing in C++",
+    "price": 0,
+    "authors": ["Bruce Trask", "Angel Roman"],
+    "categories": []
+  }
+  {
+    "title": "Big Data",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/marz.jpg",
+    "authors": ["Nathan Marz", "James Warren"],
+    "categories": []
+  }
+  {
+    "title": "CoffeeScript in Action",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lee.jpg",
+    "authors": ["Patrick Lee"],
+    "categories": []
+  }
+  {
+    "title": "SQL Server MVP Deep Dives, Volume 2",
+    "price": 750,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/delaney.jpg",
+    "authors": [
+      "Kalen Delaney",
+      "Louis Davidson",
+      "Greg Low",
+      "Brad McGehee",
+      "Paul Nielsen",
+      "Paul Randal",
+      "",
+      "Kimberly Tripp"
+    ],
+    "categories": []
+  }
+  {
+    "title": "HTML5 in Action",
+    "price": 375,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/crowther2.jpg",
+   "authors": ["Rob Crowther", "Joe Lennon", "Ash Blue", "", "Greg Wanish"],
+    "categories": []
+  }
+  {
+    "title": "Java Persistence with Hibernate, Second Edition",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer3.jpg",
+    "authors": ["Christian Bauer", "Gavin King", "", "Gary Gregory"],
+    "categories": []
+  }
+  {
+    "title": "Hadoop in Practice",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/holmes.jpg",
+    "authors": ["Alex Holmes"],
+    "categories": []
+  }
+  {
+    "title": "HBase in Action",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dimidukkhurana.jpg",
+    "authors": ["Nicholas Dimiduk", "Amandeep Khurana"],
+    "categories": []
+  }
+  {
+    "title": "Flex Mobile in Action",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/campos.jpg",
+    "authors": ["Jonathan Campos"],
+    "categories": []
+  }
+  {
+    "title": "HTML5 for .NET Developers",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jackson.jpg",
+    "authors": ["Jim Jackson", "II", "Ian Gilman"],
+    "categories": []
+  }
+  {
+    "title": "50 Android Hacks",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/sessa.jpg",
+    "authors": ["Carlos M. Sessa"],
+    "categories": []
+  }
+  {
+    "title": "PowerShell in Depth",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jones2.jpg",
+    "authors": ["Don Jones", "Richard Siddaway", "", "Jeffery Hicks"],
+    "categories": []
+  }
+  {
+    "title": "Augmented Reality Revealed",
+    "price": 0,
+    "authors": ["Robert A. Rice Jr."],
+    "categories": []
+  }
+  {
+    "title": "Building Well-Structured JavaScript Applications",
+    "price": 0,
+    "authors": ["Julio C. Ody"],
+    "categories": []
+  }
+  {
+    "title": "Linked Data",
+    "price": 0,
+    "thumbnailUrl":
+      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dwood.jpg",
+    "authors": [
+      "David Wood",
+      "Marsha Zaidman",
+      "Luke Ruth",
+      "with Michael Hausenblas"
+    ],
+    "categories": []
+  }
+
