@@ -1,22 +1,19 @@
 import { getDocumentHeight, getScrollTop } from "../app.js";
 
 async function getBooks(page, limit) {
-  const response = await fetch(
-    `http://localhost:8080/api/books/?_limit=${limit}&_page=${page}`
-  );
+  const response = await fetch(`/api/books/?_limit=${limit}&_page=${page}`);
   const data = await response.json();
   return data;
 }
 
 export default (navigateTo) => {
-  const mainWrapper = document.getElementById("main-wrapper");
-  const loading = document.getElementById("loader");
-
   let PAGE_NO = 0;
   let PAGINATION_LIMIT = 20;
   let END_PAGINATE = false;
 
   async function showBooks(page) {
+    const mainWrapper = document.getElementById("main-wrapper");
+    const loading = document.getElementById("loader");
     const data = await getBooks(page, PAGINATION_LIMIT);
     if (data.total / PAGINATION_LIMIT <= page) {
       loading.style.display = "none";
@@ -24,12 +21,12 @@ export default (navigateTo) => {
     }
     data.books.forEach((book) => {
       const bookElement = document.createElement("div");
-      bookElement.classList.add("albums");
+      bookElement.classList.add("books");
       bookElement.dataset.href = `/book/${book._id}/order`;
       bookElement.setAttribute("data-link", "");
       bookElement.innerHTML = `
-        <div class="album-info"> 
-          <div class="img-album">
+        <div class="book-info"> 
+          <div class="img-book">
             <img
               src=${
                 book.thumbnailUrl
@@ -39,12 +36,16 @@ export default (navigateTo) => {
               alt=""
             />
           </div>
-          <p class="album-body">
-          ${book.title}
-          </p>
-          <p class="album-body">
-          $${book.price}
-          </p>
+          <div class="book-body">
+            <p >
+            ${book.title}
+            </p>
+          </div>
+          <div class="book-body price">
+            <p>
+            $${book.price}
+            </p>
+          </div>
         </div>
       `;
       bookElement.onclick = (e) => {

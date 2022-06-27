@@ -9,9 +9,14 @@ const getBooks = async function (req, res) {
   return res.json({ books, total: await Book.find().count() });
 };
 
-const getBook = function (req, res) {
-  const book = Book.findById(req.params.bookId);
+const getBook = async function (req, res) {
+  const book = await getBookById(req.params.bookId);
   return res.json(book);
 };
 
-export { getBooks, getBook };
+const getBookById = async function (bookId) {
+  const book = await Book.findById(bookId);
+  return book;
+};
+
+export { getBooks, getBook, getBookById };

@@ -19,7 +19,6 @@ export default class extends MainView {
             <h1>Books</h1>
             <div class="wrapper" id="main-wrapper"></div>
             <div id="loader">
-              <div>...Loading</div>
             </div>
           </div>
         `;

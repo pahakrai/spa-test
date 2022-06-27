@@ -1,7 +1,7 @@
 import { Order } from "../models/index.js";
 
-const createOrder = function (req, res) {
-  Order.create(req.body)
+const createOrder = function (order) {
+  Order.create(order)
     .then(function (newOrder) {
       res.status(201).json(newOrder);
     })

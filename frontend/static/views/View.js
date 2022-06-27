@@ -10,9 +10,9 @@ export default class {
   partialJSScriptLoad(filename) {
     // NOTE: Testing Partial js load and Script cleaning
     // await super.loadPartialJS();
-    // var newScript = document.createElement("script");
+    // const newScript = document.createElement("script");
     // newScript.async = true;
-    // newScript.src = "/static/views/BookOrder.partial.js";
+    // newScript.src = filename; // eg: "/static/views/BookOrder.partial.js";
     // document.body.appendChild(newScript);
   }
 

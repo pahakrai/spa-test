@@ -8,8 +8,8 @@ const router = express.Router();
    - GET     /api/books/:bookId     // Retrieve a book
 */
 
-router.route("/").get(getBooks);
+router.get("/", getBooks);
 
-router.route("/:bookId").get(getBook);
+router.get("/:bookId", getBook);
 
 export { router as bookRouter };

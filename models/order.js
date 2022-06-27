@@ -6,14 +6,18 @@ import mongoose from "mongoose";
 // });
 
 const orderSchema = new mongoose.Schema({
-  title: {
+  customerName: {
+    type: String,
+    required: true,
+  },
+  customerPhone: {
     type: String,
     required: true,
   },
   orderItems: {
     type: [
       {
-        bookId: String,
+        productId: String,
         qty: Number,
       },
     ],

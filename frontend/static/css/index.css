@@ -1,6 +1,9 @@
 body {
-    --nav-width: 200px;
-    margin: 0 0 0 var(--nav-width);
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    /* --nav-width: 200px; */
+    /* margin: 0 0 0 var(--nav-width); */
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
 }
@@ -9,13 +12,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: var(--nav-width);
-    height: 100vh;
+    right: 0;
     background: #222222;
 }
 
 .nav-link {
-    display: block;
+    display: table;
+    margin: 32px;
     padding: 12px 18px;
     text-decoration: none;
     color: #eeeeee;
@@ -28,6 +31,7 @@ body {
 
 #app {
     margin: 2em;
+    margin-top: 20vh;
     line-height: 1.5;
     font-weight: 500;
     align-items: center;
@@ -43,28 +47,120 @@ img {
     max-height: 100%;
 }
 
-.albums {
+.books {
     background: rgba(73, 71, 71, 0.05);
 }
 
 
-.albums:hover {
+.books:hover {
     background: rgba(24, 22, 22, 0.3);
 }
 
-.album-info {
+.book-info {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     align-items: center;
 }
 
-/* .album-body {
+.book-body {
     text-align: left;
-} */
+}
+
+.book-body.price {
+    text-align: right;
+}
 
 
-.img-album {
+.img-book {
     height: 75px;
     width: 75px;
 }
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+#loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

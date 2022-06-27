@@ -9,7 +9,7 @@ export default class extends MainView {
   }
 
   async loadPartialJS() {
-    BookOrderPartial();
+    await BookOrderPartial(this.bookId);
   }
 
   async getHtml() {
@@ -30,7 +30,7 @@ export default class extends MainView {
                 <small></small>
             </div>
             <div class="form-field">
-                <input type="submit" value="Pay">
+                <input type="submit" value="Pay" class="btn">
             </div>
         </form>
       </div> 
