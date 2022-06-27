@@ -1,10 +1,5 @@
+import { getBooks } from "../api/books.js";
 import { getDocumentHeight, getScrollTop } from "../app.js";
-
-async function getBooks(page, limit) {
-  const response = await fetch(`/api/books/?_limit=${limit}&_page=${page}`);
-  const data = await response.json();
-  return data;
-}
 
 export default (navigateTo) => {
   let PAGE_NO = 0;
@@ -36,16 +31,12 @@ export default (navigateTo) => {
               alt=""
             />
           </div>
-          <div class="book-body">
-            <p >
+          <p class="book-body">
             ${book.title}
-            </p>
-          </div>
-          <div class="book-body price">
-            <p>
+          </p>
+          <p class="book-body price">
             $${book.price}
-            </p>
-          </div>
+          </p>
         </div>
       `;
       bookElement.onclick = (e) => {

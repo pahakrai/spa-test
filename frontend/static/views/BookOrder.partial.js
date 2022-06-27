@@ -1,48 +1,33 @@
-const debounce = (fn, delay = 500) => {
-  let timeoutId;
-  return (...args) => {
-    // cancel the previous timer
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-    // setup a new timer
-    timeoutId = setTimeout(() => {
-      fn.apply(null, args);
-    }, delay);
-  };
-};
+import { getBookById } from "../api/books.js";
+import { fetchCheckoutSession, fetchConfig } from "../api/stripe.js";
+import debounce from "../utils/debounce.js";
+import { isRequired, isNumeric, isBetween } from "../utils/form-validation.js";
 
-const isNumeric = (str) => {
-  if (typeof str != "string") return false; // we only process strings!
-  return (
-    !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
-    !isNaN(parseFloat(str))
-  ); // ...and ensure strings of whitespace fail
-};
-
-const isRequired = (value) => (value === "" ? false : true);
-const isBetween = (length, min, max) =>
-  length < min || length > max ? false : true;
-
-const fetchCheckoutSession = async ({ quantity, bookId }) => {
-  const { sessionId } = await fetch("/api/orders/create-checkout-session", {
-    method: "post",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    // mode: "cors",
-    // cache: "default",
-    body: JSON.stringify({ quantity, bookId }),
-  }).then((res) => res.json());
-  return sessionId;
-};
-
-async function fetchConfig() {
-  // Fetch config from our backend.
-  const { publicKey } = await fetch("/api/orders/config").then((res) =>
-    res.json()
-  );
-  return publicKey;
+async function bookDetail(bookId) {
+  const mainWrapper = document.getElementById("book-info");
+  const book = await getBookById(bookId);
+  const bookElement = document.createElement("div");
+  bookElement.innerHTML = `
+        <div class="book-info"> 
+          <div class="img-book">
+            <img
+              src=${
+                book.thumbnailUrl
+                  ? book.thumbnailUrl
+                  : "/static/no-image-icon.png"
+              }
+              alt=""
+            />
+          </div>
+          <p class="book-body">
+          ${book.title}
+          </p>
+          <p class="book-body price">
+          $${book.price}
+          </p>
+        </div>
+      `;
+  mainWrapper.appendChild(bookElement);
 }
 
 export default async function (bookId) {
@@ -158,4 +143,6 @@ export default async function (bookId) {
       }
     })
   );
+
+  bookDetail(bookId);
 }

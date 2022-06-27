@@ -1,18 +1,5 @@
-async function getBookById(bookId) {
-  const response = await fetch(`/api/books/${bookId}`);
-  const data = await response.json();
-  console.log(data, "book here");
-  return data;
-}
-
-async function getStripeSessionBySessionId(sessionId) {
-  const response = await fetch(
-    `/api/orders/checkout-session?sessionId=${sessionId}`
-  );
-  const data = await response.json();
-  console.log(data, "session here");
-  return data;
-}
+import { getBookById } from "../api/books.js";
+import { getStripeSessionBySessionId } from "../api/stripe.js";
 
 async function bookDetail(bookId) {
   const mainWrapper = document.getElementById("book-info");
@@ -33,7 +20,7 @@ async function bookDetail(bookId) {
           <p class="book-body">
           ${book.title}
           </p>
-          <p class="book-body">
+          <p class="book-body price">
           $${book.price}
           </p>
         </div>

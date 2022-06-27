@@ -30,12 +30,11 @@ body {
 }
 
 #app {
-    margin: 2em;
-    margin-top: 20vh;
     line-height: 1.5;
     font-weight: 500;
-    align-items: center;
-    max-width: fit-content;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20vh;
 }
 
 a {

@@ -16,7 +16,8 @@ export default class extends MainView {
     return `
       <div class="container">
         <h1>Book</h1>
-        <p>You are viewing book #${this.bookId}.</p>
+        <div id="book-info">
+        </div>
         <form id="checkout" class="form">
             <h1>Check Out Order</h1>
             <div class="form-field">
