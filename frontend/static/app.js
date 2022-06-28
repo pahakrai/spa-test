@@ -1,7 +1,7 @@
 import Home from "./views/Home.js";
-import Books from "./views/Books.js";
 import BookOrder from "./views/BookOrder.js";
 import BookOrderSuccess from "./views/BookOrderSuccess.js";
+import BooksOrderCancelled from "./views/BooksOrderCancelled.js";
 
 export function getDocumentHeight() {
   const body = document.body;
@@ -47,9 +47,9 @@ export const navigateTo = (url) => {
 export const router = async () => {
   const routes = [
     { path: "/", view: Home },
-    { path: "/books", view: Books },
     { path: "/book/:id/order", view: BookOrder },
-    { path: "/book/:id/order/success/", view: BookOrderSuccess },
+    { path: "/book/:id/order/create/", view: BookOrderSuccess },
+    { path: "/books/:id/order/cancelled", view: BooksOrderCancelled },
   ];
 
   // Test each route for potential match

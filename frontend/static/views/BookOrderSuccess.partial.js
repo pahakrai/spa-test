@@ -1,5 +1,5 @@
 import { getBookById } from "../api/books.js";
-import { getStripeSessionBySessionId } from "../api/stripe.js";
+import { createSessionOrder } from "../api/orders.js";
 
 async function bookDetail(bookId) {
   const mainWrapper = document.getElementById("book-info");
@@ -10,7 +10,7 @@ async function bookDetail(bookId) {
           <div class="img-book">
             <img
               src=${
-                book.thumbnailUrl
+                book?.thumbnailUrl
                   ? book.thumbnailUrl
                   : "/static/no-image-icon.png"
               }
@@ -18,31 +18,36 @@ async function bookDetail(bookId) {
             />
           </div>
           <p class="book-body">
-          ${book.title}
+          ${book?.title}
           </p>
           <p class="book-body price">
-          $${book.price}
+          $${book?.price}
           </p>
         </div>
       `;
   mainWrapper.appendChild(bookElement);
 }
 
-async function stripeSession(sessionId) {
+async function updateSessionOrder(orderModel) {
   const mainWrapper = document.getElementById("session-info");
-  const session = await getStripeSessionBySessionId(sessionId);
+  const sessionOrder = await createSessionOrder(orderModel);
+  if (Boolean(sessionOrder.order?._id)) {
+    document.getElementById("order-status").textContent = "Order Created";
+  } else {
+    document.getElementById("order-status").textContent = "Order Failed";
+  }
   const bookElement = document.createElement("div");
   bookElement.innerHTML = `
         <p class="session-detail"> 
           <p>
-          ${JSON.stringify(session)}
+           Your Order Identification Number is ${sessionOrder.order?._id}
           </p>
         </div>
       `;
   mainWrapper.appendChild(bookElement);
 }
 
-export default (bookId, sessionId) => {
+export default (bookId, sessionId, username, phone, quantity) => {
   bookDetail(bookId);
-  stripeSession(sessionId);
+  updateSessionOrder({ bookId, sessionId, username, phone, quantity });
 };

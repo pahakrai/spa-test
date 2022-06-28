@@ -12,8 +12,10 @@ export default class extends MainView {
 
   async getHtml() {
     return `
-            <h1>Books</h1>
-            <p>You are viewing the Books!</p>
+            <div class="container">
+              <h1>Order</h1>
+              <p>Stripe Session Cancelled!</p>
+            </div>
         `;
   }
 }

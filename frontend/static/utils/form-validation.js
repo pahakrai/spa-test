@@ -10,4 +10,11 @@ const isRequired = (value) => (value === "" ? false : true);
 const isBetween = (length, min, max) =>
   length < min || length > max ? false : true;
 
-export { isRequired, isBetween, isNumeric };
+const isEmpty = (object) => {
+  for (const property in object) {
+    return false;
+  }
+  return true;
+};
+
+export { isRequired, isBetween, isNumeric, isEmpty };

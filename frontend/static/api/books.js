@@ -1,7 +1,6 @@
 async function getBookById(bookId) {
   const response = await fetch(`/api/books/${bookId}`);
   const data = await response.json();
-  console.log(data, "book here");
   return data;
 }
 

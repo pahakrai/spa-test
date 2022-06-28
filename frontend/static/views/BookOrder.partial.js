@@ -1,13 +1,28 @@
 import { getBookById } from "../api/books.js";
 import { fetchCheckoutSession, fetchConfig } from "../api/stripe.js";
 import debounce from "../utils/debounce.js";
-import { isRequired, isNumeric, isBetween } from "../utils/form-validation.js";
+import {
+  isRequired,
+  isNumeric,
+  isBetween,
+  isEmpty,
+} from "../utils/form-validation.js";
 
 async function bookDetail(bookId) {
   const mainWrapper = document.getElementById("book-info");
   const book = await getBookById(bookId);
   const bookElement = document.createElement("div");
-  bookElement.innerHTML = `
+  bookElement.innerHTML =
+    !book || isEmpty(book)
+      ? `
+        <div class="book-info"> 
+          <h1>
+            Book Not Found
+          </h1>
+        </div>
+        
+        `
+      : `
         <div class="book-info"> 
           <div class="img-book">
             <img
@@ -37,7 +52,6 @@ export default async function (bookId) {
 
   const stripePublicKey = await fetchConfig();
   const loadedStripe = Stripe(stripePublicKey);
-  console.log(stripePublicKey, loadedStripe, "stripes");
 
   const checkUsername = () => {
     let valid = false;
@@ -105,6 +119,7 @@ export default async function (bookId) {
   form.addEventListener("submit", async function (e) {
     // prevent the form from submitting
     e.preventDefault();
+    document.getElementById("btn-loader").style.display = "block";
     const orderQuantity = 1;
 
     // validate fields
@@ -118,12 +133,15 @@ export default async function (bookId) {
       const sessionId = await fetchCheckoutSession({
         quantity: orderQuantity,
         bookId,
+        name: usernameEl.value.trim(),
+        phone: phoneEl.value.trim(),
       });
       // When the customer clicks on the button, redirect them to Checkout.
       const { error } = await loadedStripe.redirectToCheckout({
         sessionId,
       });
       if (error) {
+        document.getElementById("btn-loader").style.display = "none";
         // loading false
         // error display using `error.message`.
       }

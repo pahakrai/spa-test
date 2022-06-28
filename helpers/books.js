@@ -1,4 +1,5 @@
 import { Book } from "../models/index.js";
+import mongoose from "mongoose";
 
 const getBooks = async function (req, res) {
   const PAGINATION_LIMIT = req.query._limit || 20;
@@ -10,7 +11,8 @@ const getBooks = async function (req, res) {
 };
 
 const getBook = async function (req, res) {
-  const book = await getBookById(req.params.bookId);
+  const book = await getBookById(mongoose.Types.ObjectId(req.params.bookId));
+  if (!Boolean(book)) res.status(404).send(new Error("book not found"));
   return res.json(book);
 };
 

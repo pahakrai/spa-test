@@ -32,6 +32,7 @@ export default class extends MainView {
             </div>
             <div class="form-field">
                 <input type="submit" value="Pay" class="btn">
+                <div id="btn-loader"></div>
             </div>
         </form>
       </div> 
